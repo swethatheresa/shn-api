@@ -6,6 +6,29 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
+app.get('/', (request, response) => {
+  response.json(
+    {
+      "message": "Welcome to the Hostel Management System API",
+      "routes": [
+        {
+          "route": "/add",
+          "methods": [
+            "POST"
+          ]
+        },
+        {
+          "route": "/content",
+          "methods": [
+            "GET"
+           
+          ]
+        }
+      ]
+    }
+  )
+})
+
 app.post("/add", async (req, res) => {
   let gallery = new Gallery(req.body);
   let result = await gallery.save();
