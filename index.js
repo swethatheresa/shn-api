@@ -9,7 +9,7 @@ app.use(cors());
 app.get('/', (request, response) => {
   response.json(
     {
-      "message": "Welcome to the Hostel Management System API",
+      "message": "SATURDAY HACK-NIGHT API",
       "routes": [
         {
           "route": "/add",
