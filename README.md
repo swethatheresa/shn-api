@@ -8,7 +8,7 @@ To install necessary packages
 ### `npm install` 
 
 In the project directory, you can run:
-### `node index.js`
+### `nodemon index.js`
 
 Runs the app in the development mode.\
 Open [http://localhost5000](http://localhost:5000) to view it in your browser.
